@@ -101,7 +101,7 @@ def find_model_path() -> Path | None:
 
 @st.cache_resource(show_spinner="Loading EfficientNetB0 classifier...")
 def load_model(model_path: str) -> tf.keras.Model:
-    return tf.keras.models.load_model(model_path, compile=False)
+    return tf.keras.models.load_model(model_path)
 
 
 def load_class_names() -> list[str]:
