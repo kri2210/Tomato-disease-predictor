@@ -85,6 +85,7 @@ If you want a live web app, connect the GitHub repository to Streamlit Community
 5. Deploy the app.
 
 Make sure the repository includes `tomato_efficientnetb0.keras` and `class_names.npy`, otherwise the app will ask you to train the notebook first.
+Also keep `runtime.txt` in the repository so Streamlit uses Python 3.11, which is compatible with TensorFlow 2.15.
 
 ## Usage
 
