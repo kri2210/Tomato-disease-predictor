@@ -1,0 +1,10 @@
+# Local editor settings
+.vscode/
+
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Avoid committing huge archive; use Dataset/ folder directly
+DATASET.zip
