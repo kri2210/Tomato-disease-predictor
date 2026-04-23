@@ -62,39 +62,5 @@ If your dataset uses different folder names, update the notebook paths before tr
 ## Deploy On GitHub
 
 This project is ready to be published to a GitHub repository and deployed from that repository.
-
-### Push The Project To GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial tomato disease prediction app"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
-
-### Deploy With Streamlit Community Cloud
-
-If you want a live web app, connect the GitHub repository to Streamlit Community Cloud:
-
-1. Push the project to GitHub.
-2. Sign in to Streamlit Community Cloud.
-3. Choose your GitHub repository.
-4. Set the main file path to `app.py`.
-5. Deploy the app.
-
-Make sure the repository includes `tomato_efficientnetb0.keras` and `class_names.npy`, otherwise the app will ask you to train the notebook first.
-Also keep `runtime.txt` in the repository so Streamlit uses Python 3.11, which is compatible with TensorFlow 2.15.
-
-## Usage
-
-1. Open the app.
-2. Upload a tomato leaf image in JPG, JPEG, PNG, or WEBP format.
-3. Review the predicted class, confidence score, disease details, and suggested treatment.
-4. Download the diagnosis report if needed.
-
-## Notes
-
-- The app uses a confidence threshold of 60% and will warn when the prediction is uncertain.
-- Predictions are based on the classes the model was trained on, so image quality and dataset coverage affect accuracy.
+## Streamlit deployed link
+https://tomato-disease-predictor-22.streamlit.app/
